@@ -1,0 +1,5 @@
+def main() -> None:
+    print("Hello from rag-evaluation-system!")
+
+
+main()

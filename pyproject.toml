@@ -1,0 +1,29 @@
+[project]
+name = "rag-evaluation-system"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "jidisha", email = "jidishasijapati@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain>=1.4.3",
+    "langchain-core>=1.6.6",
+    "langchain-openai>=1.6.7",
+    "pydantic>=2.13.5",
+    "pymupdf>=1.28.2",
+]
+
+[project.scripts]
+rag-evaluation-system = "rag_evaluation_system:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
